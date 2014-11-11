@@ -1,0 +1,36 @@
+﻿/* MENU */
+/* mobile */
+.tPullMenu{display:none;cursor:pointer;padding:10px;position:relative;background:red}
+.tPullMenu p{font-weight:bold;color:#fff;margin:0;padding:0}
+.tPullMenu .pullIcon{position:absolute;right:7px;top:50%;margin-top:-15px;width:30px;height:30px;background:url(../images/menu-pull-icon.png) no-repeat center center}
+.tMenuMobile{display:none;position:absolute;top:0;left:0;z-index:1000;width:100%;background:#5CB85C;overflow:auto;overflow-x:none;padding-bottom:45px}
+.tMenuMobile .tCloseMenu{cursor:pointer;position:relative;width:45px;height:45px;left:50%;margin-left:-23px;bottom:0;background:url(../images/menu-close.png) no-repeat center center}
+.tMenuMobile .myMenu{position:relative;margin:0;padding:0;list-style:none}
+.tMenuMobile .myMenu ul{display:none;margin:0;list-style:none}
+.tMenuMobile .myMenu li{position:relative}
+.tMenuMobile .myMenu li a{display:block;text-decoration:none}
+.tMenuMobile .myMenu li a span{display:block;padding:10px 20px;color:#333}
+.tMenuMobile .myMenu li i{cursor:pointer;width:24px;height:24px;background:url(../images/menu-arrow-down.png) no-repeat center center #6FA7E5;position:absolute;top:8px;right:12px}
+.tMenuMobile .myMenu li.tmExpd>a i{background:url(../images/menu-arrow-up.png) no-repeat center center #6FA7E5}
+/* desktop default */
+.tMenuDesktop{background:#5cb85c}
+.tMenuDesktop .myMenu{position:relative;margin:0;padding:0;list-style:none}
+.tMenuDesktop .myMenu li{position:relative;float:left}
+.tMenuDesktop .myMenu>li>a>span>i{background:url(../images/menu-arrow-down.png) no-repeat center center !important}
+.tMenuDesktop .myMenu>li.menu-right{float:right}
+.tMenuDesktop .myMenu li.align-right{text-align:right}
+.tMenuDesktop .myMenu li.align-right i{right:auto!important;left:0;background:url(../images/menu-arrow-left.png) no-repeat center center}
+.tMenuDesktop .myMenu li i{cursor:pointer;width:16px;height:16px;background:url(../images/menu-arrow-right.png) no-repeat center center;position:absolute;top:50%;right:0;margin-top:-8px}
+.tMenuDesktop .myMenu li.active,.tMenuDesktop .myMenu li.tMenuHover{background:#50A750}
+.tMenuDesktop .myMenu li a{display:block;text-decoration:none}
+.tMenuDesktop .myMenu li a span{color:#333;display:block;padding:10px 20px}
+/* sub 1 */
+.tMenuDesktop .myMenu ul{display:none;background:#5cb85c;position:absolute;z-index:1000;margin:0;padding:0;list-style:none}
+.tMenuDesktop .myMenu ul li{float:none;min-width:100px}
+.tMenuDesktop .myMenu ul li a{float:none;min-width:100px}
+.tMenuDesktop .myMenu ul li a span{white-space:nowrap;float:none;min-width:100px}
+/* sub n */
+.tMenuDesktop .myMenu ul ul {position:absolute;left:100%;top:0}
+/* float, align */
+.tMenuDesktop .myMenu li.align-right>ul{left:auto;right:0}
+.tMenuDesktop .myMenu ul li.align-right>ul{right:100%}

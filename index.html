@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menu Demo</title>
+		<link rel="stylesheet" href="css/jquery.tmenu.css" type="text/css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="js/jquery.tmenu.js"></script>
+		<style type="text/css">
+			.clearfix{clear:both;height:0;font-size:0}
+		</style>
+        <script type="text/javascript">
+			$(function(){
+				$(".myMenu").tMenu({ 
+					showArrow:true, 
+					resposiveBreak: 900, 
+					desktopWrapClass: "tMenuDesktop", 
+					mobileWrapClass: "tMenuMobile",
+					expandMenuClass: "tPullMenu",
+					closeMenuClass: "tCloseMenu"
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<!-- MENU -->
+		<div class="tMenuWrap">
+			<div class="tPullMenu">
+				<p>Menu</p>
+				<div class="pullIcon"></div>
+			</div>
+			<div class="tMenuDesktop">
+				<ul class="myMenu">
+					<li><a href="#"><span>Trang chủ</span></a></li>
+					<li><a href="#"><span>Về AiiM</span></a>
+						<ul>
+							<li><a href="#"><span>Sub 1</span></a></li>
+							<li><a href="#"><span>Sub 2</span></a></li>
+						</ul>
+					</li>
+					<li><a href="#"><span>Khóa học</span></a></li>
+					<li><a href="#"><span>Sự kiện</span></a></li>
+					<li class="align-right"><a href="#"><span>Festival</span></a>
+						<ul>
+							<li><a href="#"><span>Sub 1</span></a></li>
+							<li><a href="#"><span>Sub 2</span></a></li>
+						</ul>
+					</li>
+					<li><a href="#"><span>Tuyển dụng</span></a></li>
+					<li class="menu-right align-right"><a href="#"><span>Tài nguyên</span></a>
+						<ul>
+							<li><a href="#"><span>Sub 1</span></a></li>
+							<li class="align-right"><a href="#"><span>Sub 2</span></a>
+								<ul>
+									<li><a href="#"><span>Sub 1</span></a></li>
+									<li><a href="#"><span>Sub 2</span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<div class="clearfix"></div>
+				<div class="tCloseMenu"></div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<!-- END: MENU -->
+	</body>
+</html>

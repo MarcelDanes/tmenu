@@ -1,0 +1,14 @@
+{
+  "name": "tmenu",
+  "version": "1.0.0",
+  "authors": [
+    "Trần Thành Tin <tindl88@gmail.com>"
+  ],
+  "description": "responsive menu",
+  "main": ["js/jquery.tmenu.js","css/jquery.tmenu.css"],
+  "keywords": [
+    "responsive",
+    "menu"
+  ],
+  "license": "MIT"
+}
